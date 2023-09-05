@@ -6,6 +6,7 @@ var list = parsedFile[0].data;
 
 for (var i = 1; i < list.length; ++i) {
   list[i].push(generatePassword());
+  console.log("send mail to " + list[i][2]);
 }
 list[0].push("haslo");
 
